@@ -1,0 +1,14 @@
+CREATE TABLE everybody(
+	user_global_id INT NOT NULL AUTO_INCREMENT,
+	fname VARCHAR(20) NOT NULL,
+	lname VARCHAR(20) NOT NULL,
+	full_name VARCHAR(40) NOT NULL,
+	username VARCHAR(20) NOT NULL,
+	email VARCHAR(100) NOT NULL,
+	unique_pass VARCHAR(100) NOT NULL,
+	signed_on VARCHAR(12) NOT NULL,
+	act_state VARCHAR(5) NOT NULL,
+	PRIMARY KEY(user_global_id),
+	INDEX(email)
+)	ENGINE=InnoDB AUTO_INCREMENT=260500; 
+ 
